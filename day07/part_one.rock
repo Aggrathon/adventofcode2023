@@ -1,0 +1,148 @@
+(Instructions for running:)
+(Copy paste the code to https://codewithrockstar.com/online)
+(And insert the input into the input field)
+
+
+(### read data)
+
+Parse Card takes a card
+    Cut "AKQJT98765432" into Pieces
+    Index is incredible
+    While not lies
+        If a card is Pieces at Index
+            Give Index
+
+        Build Index up
+
+
+Parse Hand takes a string
+    Split a string
+    Rock a hand
+    Let a card be roll a string
+    While a card
+        Rock a hand with Parse Card taking a card
+        Let a card be roll a string
+
+    Give a hand back
+
+
+Rock your hands
+Rock the bids
+Listen to my heart
+While my heart ain't silent
+    Split my heart into two with " "
+    Rock your hands with Parse Hand taking roll two
+    Burn roll two into my bid
+    Rock the bids with my bid
+    Listen to my heart
+
+
+(### compare hands)
+
+Count takes a hand
+    Rock the counter
+    Let a card be roll a hand
+    While a card
+        Let the count be the counter at a card
+        If the count is mysterious
+            Let the count be 0
+
+        Let the counter at a card be the count with 1
+        Let a card be roll a hand
+
+    Give the counter back
+
+(rock test with 1, 1, 2, 3)
+(Let counter be Count taking test)
+(say counter at 1)
+(say counter at 2)
+(say counter at 3)
+
+
+Occurances takes a counter, target
+    Let num be 0
+    Let index be num
+    While index is less than a counter
+        If target is a counter at index
+            build num up
+
+        build index up
+
+    Give num back
+
+(rock test with 1, 1, 2, 3)
+(Let counter be Count taking test)
+(say Occurances taking counter, 2)
+(say Occurances taking counter, 1)
+
+
+Type takes a hand
+    let counter be Count taking a hand
+    If Occurances taking counter, 5 is 1
+        Give back 1
+
+    If Occurances taking counter, 4 is 1
+        Give back 2
+
+    If Occurances taking counter, 3 is 1
+        If Occurances taking counter, 2 is 1
+            Give back 3
+        Else
+            Give back 4
+
+    If Occurances taking counter, 2 is 2
+        Give back 5
+
+    If Occurances taking counter, 2 is 1
+        Give back 6
+
+    Give back 7
+
+(let hand be Parse Hand taking "QQ333")
+(say Type taking hand)
+(let hand be Parse Hand taking "Q5432")
+(say Type taking hand)
+
+
+Compare takes two, hands
+    let first be Type taking two
+    let second be Type taking hands
+    While first and second
+        If first is less than second
+            Give right back
+
+        If second is less than first
+            Give lies back
+
+        Let first be roll two
+        Let second be roll hands
+
+    Give nothing back
+
+
+(let handone be Parse Hand taking "QQ333")
+(let handtwo be Parse Hand taking "Q5432")
+(say Compare taking handone, handtwo)
+
+
+(### rank and count winnings)
+
+Let the winnings be nothing
+Let the index be nothing
+While the bids ain't silent
+    Let the rank be 1
+    Let the other be nothing
+    While the other is lower than your hands
+        Put your hands at the index into First
+        Put your hands at the other into Second
+        If Compare taking First, Second
+            Build the rank up
+
+        Build the other up
+
+    Roll the bids into my bid
+    Put the winnings with the rank of my bid into the winnings
+    Build the index up
+
+Shout the winnings
+
