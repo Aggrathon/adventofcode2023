@@ -26,15 +26,19 @@ Parse Hand takes a string
     Give a hand back
 
 
-Rock your hands
-Rock the bids
-Listen to my heart
-While my heart ain't silent
-    Split my heart into two with " "
-    Rock your hands with Parse Hand taking roll two
-    Burn roll two into my bid
-    Rock the bids with my bid
+Input takes tmp
+    Rock your hands
+    Rock the bids
     Listen to my heart
+    While my heart ain't silent
+        Split my heart into two with " "
+        Rock your hands with Parse Hand taking roll two
+        Burn roll two into my bid
+        Rock the bids with my bid
+        Listen to my heart
+
+    Rock out with your hands, the bids
+    Send out
 
 
 (### compare hands)
@@ -127,22 +131,28 @@ Compare takes two, hands
 
 (### rank and count winnings)
 
-Let the winnings be nothing
-Let the index be nothing
-While the bids ain't silent
-    Let the rank be 1
-    Let the other be nothing
-    While the other is lower than your hands
-        Put your hands at the index into First
-        Put your hands at the other into Second
-        If Compare taking First, Second
-            Build the rank up
+Calculate takes your hands, and the bids
+    Let the winnings be nothing
+    Let the index be nothing
+    While the bids ain't silent
+        Let the rank be 1
+        Let the other be nothing
+        While the other is lower than your hands
+            Put your hands at the index into First
+            Put your hands at the other into Second
+            If Compare taking First, Second
+                Build the rank up
 
-        Build the other up
+            Build the other up
 
-    Roll the bids into my bid
-    Put the winnings with the rank of my bid into the winnings
-    Build the index up
+        Roll the bids into my bid
+        Put the winnings with the rank of my bid into the winnings
+        Build the index up
 
-Shout the winnings
+    return the winnings
+
+put Input taking nothing into temp
+let your hands be roll temp
+let the bids be roll temp
+Shout Calculate taking your hands, and the bids
 
